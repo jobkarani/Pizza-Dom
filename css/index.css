@@ -10,16 +10,33 @@ html{
     display: flex;
 }
 h5{
-    color: green;
+    color: #008000;
     font-size: larger;
     font-weight: 900;
     position: relative;
-    left: 1400px;
+    left: 1200px;
     top: 30px;
 }
 .one{
-    background-image:  url(../assets/bg1.jpg) ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #fff;
+    display: flex;
+}
+.one>img{
+    position: relative;
+    left: 350px;
+}
+#one{
+    position: relative;
+    left: 350px;
+    top: 120px;
+}
+.orange{
+    color: #ffa500;
+}
+.green{
+    color: #008000;
+}
+button{
+    background-color: #ffa500;
+    border-radius: 15px 15px 15px 15px;
 }
