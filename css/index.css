@@ -5,3 +5,21 @@ html{
     box-sizing: border-box;
     font-family: 'Padauk', sans-serif;
 }
+.header{
+    background-color: #fff;
+    display: flex;
+}
+h5{
+    color: green;
+    font-size: larger;
+    font-weight: 900;
+    position: relative;
+    left: 1400px;
+    top: 30px;
+}
+.one{
+    background-image:  url(../assets/bg1.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
