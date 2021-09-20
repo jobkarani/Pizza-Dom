@@ -9,7 +9,6 @@
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/scripts.js"></script>
     <title>PIZZA-DOM</title>
 </head>
 
@@ -55,18 +54,10 @@
         <div class="form1">
             <h3>Place your order here:</h3>
             <form action="">
-                <label for="pizza">Select Pizza:</label>
-                <br>
-                <select name="pizza" id="pizza">
-                    <!-- <option value="select">Select here....</option> -->
-                    <option value="supreme">Supreme Pizza</option>
-                    <option value="meat">Meat Pizza</option>
-                    <option value="buffalo">Buffalo Pizza</option>
-                    <option value="veggie">Veggie Pizza</option>
-                </select> <br>
                 <label for="size">Choose size:</label>
                 <br>
                 <select name="size" id="size">
+                    <option value="select">Select Size...</option>
                     <option value="small">Small - 500</option>
                     <option value="med">Medium - 750</option>
                     <option value="lrg">Large - 950</option>
@@ -75,11 +66,51 @@
                 <label for="crust">Choose crust:</label>
                 <br>
                 <select name="crust" id="crust">
-                    <option value="crispy">Crispy - 500</option>
-                    <option value="stuffed">Stuffed - 600</option>
-                    <option value="gluten">Glutten-free - 800</option>
+                    <option value="crust">Select Crust...</option>
+                    <option value="crispy">Crispy - 200</option>
+                    <option value="stuffed">Stuffed - 300</option>
+                    <option value="gluten">Glutten-free - 450</option>
                 </select>
+                <br>
+                <label for="pizza">Select toppings at sh.150@:</label>
+                <br>
+                <select name="topping" id="topping">
+                    <option value="topping">Choose toppings...</option>
+                    <option value="Pineapple">Pineapple</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="bacon">Bacon</option>
+                    <option value="cheese">Extra cheese</option>
+                </select> 
+                <br>
+                <br>
+                <button type="submit">ADD 2 CART</i></button>
             </form>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Crust</th>
+                        <th>Toppings</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Cart is empty!!
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total">
+                <p>Total cost = sh <span id="total">0</span></p>
+            </div>
+            <div class="deliver">
+            <button id="deliver">Next</button>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -96,5 +127,5 @@
         <p>&#169 Job Karani 2021</p>
     </div>
 </body>
-
+<script src="js/scripts.js"></script>
 </html>
