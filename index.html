@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>PIZZA-DOM</title>
 </head>
+
 <body>
     <div class="header">
         <img src="assets/pizzalogo.webp" alt="null" width="100px">
@@ -19,26 +21,33 @@
     <div class="one">
         <img src="assets/img1.webp" alt="null" width="450px">
         <div id="one">
-            <h1><span class="orange">The Best</span> <br><strong class="green">Pizza Kingdom</strong> <span class="orange">In Town</span></h1>
-            <p> <b> We've been Creating Sweet Memories Since 1978.</b></p>
-            <p> <b> We can deliver even the most unusual ideas!</b></p>
+            <h1><span class="orange">The Best</span> <br><strong class="green">Pizza Kingdom</strong> <span
+                    class="orange">In Town</span></h1>
+            <p> <b> We've been Creating Sweet Memories Since 1978.</b> <br> <b> We can deliver even the most unusual
+                    ideas!</b></p>
             <a href="#three"><button type="button">Place an order</button></a>
         </div>
     </div>
     <div class="two">
         <div class="left">
             <h2>Our Menu</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, voluptatibus tenetur suscipit dolorem fugit sit, perspiciatis voluptatum nam explicabo quidem laudantium minus laboriosam ad quam, dicta provident optio culpa similique.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, voluptatibus tenetur suscipit dolorem
+                fugit sit, perspiciatis voluptatum nam explicabo quidem laudantium minus laboriosam ad quam, dicta
+                provident optio culpa similique.</p>
             <img src="assets/prices.webp" alt="" width="120px">
         </div>
         <div class="center">
             <h2>Fast Delivery</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, molestias numquam aspernatur aut voluptates vero ducimus alias modi? Nam sed perspiciatis eaque assumenda quo cumque officia corrupti harum commodi perferendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, molestias numquam aspernatur aut
+                voluptates vero ducimus alias modi? Nam sed perspiciatis eaque assumenda quo cumque officia corrupti
+                harum commodi perferendis.</p>
             <img src="assets/deliv.webp" alt="" width="120px">
         </div>
         <div class="right">
             <h2>Best Prices</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quisquam nesciunt amet, quod officiis possimus perferendis repellendus officia! Consequuntur asperiores, nemo eligendi facilis soluta architecto repellat eos iusto facere quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quisquam nesciunt amet, quod officiis
+                possimus perferendis repellendus officia! Consequuntur asperiores, nemo eligendi facilis soluta
+                architecto repellat eos iusto facere quae.</p>
             <img src="assets/menu.webp" alt="" width="120px">
         </div>
     </div>
@@ -46,13 +55,36 @@
         <div class="form1">
             <h3>Place your order here:</h3>
             <form action="">
-
+                <label for="pizza">Select Pizza:</label>
+                <br>
+                <select name="pizza" id="pizza">
+                    <!-- <option value="select">Select here....</option> -->
+                    <option value="supreme">Supreme Pizza</option>
+                    <option value="meat">Meat Pizza</option>
+                    <option value="buffalo">Buffalo Pizza</option>
+                    <option value="veggie">Veggie Pizza</option>
+                </select> <br>
+                <label for="size">Choose size:</label>
+                <br>
+                <select name="size" id="size">
+                    <option value="small">Small - 500</option>
+                    <option value="med">Medium - 750</option>
+                    <option value="lrg">Large - 950</option>
+                    <option value="meg">Mega - 1200</option>
+                </select> <br>
+                <label for="crust">Choose crust:</label>
+                <br>
+                <select name="crust" id="crust">
+                    <option value="crispy">Crispy - 500</option>
+                    <option value="stuffed">Stuffed - 600</option>
+                    <option value="gluten">Glutten-free - 800</option>
+                </select>
             </form>
         </div>
     </div>
     <div class="footer">
         <div class="uno">
-            <i class="fab fa-facebook" ></i>
+            <i class="fab fa-facebook"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter"></i>
         </div>
@@ -64,4 +96,5 @@
         <p>&#169 Job Karani 2021</p>
     </div>
 </body>
+
 </html>
