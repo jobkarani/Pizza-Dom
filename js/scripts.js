@@ -1,5 +1,5 @@
 // business logic
-const size =[{
+let size =[{
     size: "small",
     price:500
 },
@@ -16,22 +16,43 @@ const size =[{
     price:1200  
 }];
 
-const toppings=[{
-    topping:"pineapple",
+let toppings=[{
+    name:"pineapple",
     price:100
 },
 {
-    topping:"mushroom",
+    name:"mushroom",
     price:100  
 },
 {
-    topping:"bacon",
+    name:"bacon",
     price:100  
 },
 {
-    topping:"extra cheese",
+    name:"extra cheese",
     price:100  
-}]
+}];
+
+let crust = [{
+    name:"crispy",
+    price:200,
+},
+{
+    name:"stuffed",
+    price:300, 
+},
+{
+    name:"glutten-free",
+    price:400, 
+}];
+
+let type = [{ name:"Hawaiian Pizza"},
+{ name:"Cheese Pizza"},
+{ name:"Pepperoni Pizza"},
+{ name:"Chicken Pizza"},
+{ name:"Veggie Pizza"},
+{ name:"Meat Pizza"}
+]
 
 
 
