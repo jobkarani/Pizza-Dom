@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <title>PIZZA-DOM</title>
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>PIZZA-Kingdom</title>
 </head>
 
 <body>
     <div class="header">
         <img src="assets/pizzalogo.webp" alt="null" width="100px">
-        <h5><span>PIZZA-DOM</span></h5>
+        <h5><span>PIZZA-KINGDOM</span></h5>
     </div>
     <div class="one">
         <img src="assets/img1.webp" alt="null" width="450px">
@@ -50,74 +52,222 @@
         </div>
     </div>
     <div class="three" id="three">
+        <div class="top">
         <div class="form1">
-            <h3>Place your order here:</h3>
             <form id="pizza">
-                <select name="type" id="type">
-                    <option value="select">...Select type...</option>
-                    <option value="Hawaiian Pizza">Hawaiian Pizza</option>
-                    <option value="Cheese Pizza">Cheese Pizza</option>
-                    <option value="Pepperoni Pizza">Pepperoni Pizza</option>
-                    <option value="Chicken Pizza" >Chicken Pizza</option>
-                    <option value="Veggie Pizza" >Veggie Pizza</option>
-                    <option value="Meat Pizza" >Meat Pizza</option>
-                </select> <br> 
-                <!-- <label for="size">Choose size:</label> -->
-                <br>
+                <div>
+                    <input type="text" value="CALIFONIA PIZZA" class="form-control" placeholder="form-control" aria-label="form -control" aria-describedby="basic-addon1">
+                </div>
                 <select name="size" id="size">
                     <option value="select">...Select Size...</option>
                     <option value="small">Small - 500</option>
                     <option value="medium">Medium - 750</option>
                     <option value="large">Large - 950</option>
                     <option value="mega">Mega - 1200</option>
-                </select> <br>
-                <!-- <label for="crust">Choose crust:</label> -->
-                <br>
+                </select> 
                 <select name="crust" id="crust">
                     <option value="crust">...Select Crust...</option>
                     <option value="crispy">Crispy - 200</option>
                     <option value="stuffed">Stuffed - 300</option>
                     <option value="glutten-free">Glutten-free - 400</option>
-                </select>
-                <br>
+                </select> <br>
                 <label for="pizza">Select toppings at ksh 100 each:</label>
                 <br>
-                <!-- <select name="topping" id="topping">
-                    <option value="topping">Choose toppings...</option>
-                    <option value="Pineapple">Pineapple</option>
-                    <option value="mushroom">Mushroom</option>
-                    <option value="bacon">Bacon</option>
-                    <option value="cheese">Extra cheese</option>
-                </select>  -->
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Pineapple" name="toppings" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="Pineapple" name="topping" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                         Pineapple
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Mushroom" name="toppings" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="Mushroom" name="topping" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                         Mushroom
                     </label>
                     <br>
                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Bacon" name="toppings" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="Bacon" name="topping" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                         Bacon
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Extra cheese" name="toppings" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="Extra cheese" name="topping" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                         Extra cheese
                     </label>
                 </div>
                 </div>
+                <div>
+                    <input type="qty" value=""  type="number"  min="1" class="form-control" placeholder="Pieces" aria-label="form -control" aria-describedby="basic-addon1">
+                </div>
                 <br>
                 <br>
                 <button type="submit">ADD CART</i></button>
             </form>
+        </div>
+        <div class="form1">
+            <form id="pizza">
+                <div>
+                    <input type="text" value="CHICAGO PIZZA" class="form-control" placeholder="form-control" aria-label="form -control" aria-describedby="basic-addon1">
+                </div>
+                <select name="size" id="size">
+                    <option value="select">...Select Size...</option>
+                    <option value="small">Small - 500</option>
+                    <option value="medium">Medium - 750</option>
+                    <option value="large">Large - 950</option>
+                    <option value="mega">Mega - 1200</option>
+                </select> 
+                <select name="crust" id="crust">
+                    <option value="crust">...Select Crust...</option>
+                    <option value="crispy">Crispy - 200</option>
+                    <option value="stuffed">Stuffed - 300</option>
+                    <option value="glutten-free">Glutten-free - 400</option>
+                </select> <br>
+                <label for="pizza">Select toppings at ksh 100 each:</label>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Pineapple" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pineapple
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Mushroom" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Mushroom
+                    </label>
+                    <br>
+                 <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Bacon" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Bacon
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Extra cheese" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Extra cheese
+                    </label>
+                </div>
+                </div>
+                <div>
+                    <input type="qty" value=""  type="number"  min="1" class="form-control" placeholder="Pieces" aria-label="form -control" aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <br>
+                <button type="submit">ADD CART</i></button>
+            </form>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="form1">
+            <form id="pizza">
+                <div>
+                    <input type="text" value="GREEK PIZZA" class="form-control" placeholder="form-control" aria-label="form -control" aria-describedby="basic-addon1">
+                </div>
+                <select name="size" id="size">
+                    <option value="select">...Select Size...</option>
+                    <option value="small">Small - 500</option>
+                    <option value="medium">Medium - 750</option>
+                    <option value="large">Large - 950</option>
+                    <option value="mega">Mega - 1200</option>
+                </select> 
+                <select name="crust" id="crust">
+                    <option value="crust">...Select Crust...</option>
+                    <option value="crispy">Crispy - 200</option>
+                    <option value="stuffed">Stuffed - 300</option>
+                    <option value="glutten-free">Glutten-free - 400</option>
+                </select> <br>
+                <label for="pizza">Select toppings at ksh 100 each:</label>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Pineapple" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pineapple
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Mushroom" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Mushroom
+                    </label>
+                    <br>
+                 <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Bacon" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Bacon
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Extra cheese" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Extra cheese
+                    </label>
+                </div>
+                </div>
+                <div>
+                    <input type="qty" value=""  type="number"  min="1" class="form-control" placeholder="Pieces" aria-label="form -control" aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <br>
+                <button type="submit">ADD CART</i></button>
+            </form>
+        </div>
+        <div class="form1">
+            <form id="pizza">
+                <div>
+                    <input type="text" value="SICILIAN PIZZA" class="form-control" placeholder="form-control" aria-label="form -control" aria-describedby="basic-addon1">
+                </div>
+                <select name="size" id="size">
+                    <option value="select">...Select Size...</option>
+                    <option value="small">Small - 500</option>
+                    <option value="medium">Medium - 750</option>
+                    <option value="large">Large - 950</option>
+                    <option value="mega">Mega - 1200</option>
+                </select> 
+                <select name="crust" id="crust">
+                    <option value="crust">...Select Crust...</option>
+                    <option value="crispy">Crispy - 200</option>
+                    <option value="stuffed">Stuffed - 300</option>
+                    <option value="glutten-free">Glutten-free - 400</option>
+                </select> <br>
+                <label for="pizza">Select toppings at ksh 100 each:</label>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Pineapple" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pineapple
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Mushroom" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Mushroom
+                    </label>
+                    <br>
+                 <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Bacon" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Bacon
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Extra cheese" name="topping" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Extra cheese
+                    </label>
+                </div>
+                </div>
+                <div>
+                    <input type="qty" value=""  type="number"  min="1" class="form-control" placeholder="Pieces" aria-label="form -control" aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <br>
+                <button type="submit">ADD CART</i></button>
+            </form>
+        </div>
+    </div>
         </div>
         <div class="table">
             <table>
@@ -145,7 +295,6 @@
             <div class="deliver">
                 <button id="deliver">Next</button>
             </div>
-        </div>
     </div>
     <div class="footer">
         <div class="uno">
@@ -161,6 +310,5 @@
         <p>&#169 Job Karani 2021</p>
     </div>
 </body>
-<script src="js/scripts.js"></script>
 
 </html>
