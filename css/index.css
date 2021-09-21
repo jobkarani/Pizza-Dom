@@ -57,46 +57,21 @@ h2{
 .two>.left>img,.two>.center>img,.two>.right>img{
     position: relative;
     left: 200px;
-    border-radius: 15px 15px 15px 15px;
     
 }
 .three{
     display: flex;
 }
-.top,.bottom{
-    padding: 50px 50px 50px 50px;
-    position: relative;
-    left: 400px;
-}
-.form1 button{
-    position: relative;
-    left: 180px; 
-    background-color: #008000;
-}
-.table button{
-    position: relative;
-    left: 580px;
-    background-color: #008000;
-}
-.table{
-    position: relative;
-    left: 450px;
+form{
     background-color: #ffa500;
     width: 40%;
-    border-style: solid;
-    border-width: 2px 2px;
-    border-color: #008000;
+    padding: 20px 0 20px 50px;
     border-radius: 15px 15px 15px 15px;
 }
-.form1{
-    /* width: 70%; */
-    border-style: solid;
-    border-width: 2px 2px;
-    border-color: #008000;
+.pizza{
     background-color: #ffa500;
-    position: relative;
-    border-radius: 15px 15px 15px 15px;
-} 
+    width: 40%;
+}
 .footer{
     text-align: center;
     background-color: #adff2f;
