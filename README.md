@@ -25,7 +25,7 @@ This is Prep's week4 Independent project.It entails a pizza joint website.
 * Javascript
 
 ## Setup/Installation Requirements
-* This is the live link to view my project <a >View </a>
+* This is the live link to view my project <a href = "https://jobkarani.github.io/Pizza-Dom/">View </a>
 
 
 ## Known Bugs
