@@ -1,6 +1,6 @@
-html{
+/* html{
     box-sizing: border-box;
-}
+} */
 *,*::before,*::after{
     box-sizing: border-box;
     font-family: 'Padauk', sans-serif;
@@ -14,7 +14,7 @@ h5{
     font-size: xx-large;
     font-weight: 900;
     position: relative;
-    left: 1200px;
+    left: 900px;
     top: 30px;
 }
 .one{
@@ -59,18 +59,25 @@ h2{
     left: 200px;
     
 }
-.three{
+.section3{
     display: flex;
+    padding: 10px 30px 10px 30px;
 }
-form{
+.form{
     background-color: #ffa500;
     width: 40%;
     padding: 20px 0 20px 50px;
     border-radius: 15px 15px 15px 15px;
+    position: relative;
+    left: 200px;
 }
 .pizza{
     background-color: #ffa500;
-    width: 40%;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 300px;
+    border-radius: 15px 15px 15px 15px;
 }
 .footer{
     text-align: center;

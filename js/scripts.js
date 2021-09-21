@@ -1,5 +1,5 @@
 function order() {
-
+    
 var size = document.querySelector('input[name="size"]:checked').value; console.log("size="+size);
 var sizePrice = 0;
 if (size === "Small") {

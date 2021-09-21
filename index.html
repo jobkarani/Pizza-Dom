@@ -50,66 +50,78 @@
     </div>
 
     <div class="three">
-        <h1> Order here...</h1>
-        <form action="">
-        <div id="sizetable">
-            <h3 class="tablehead">Select size:</h3>
-            <div>
-                <input type="radio" name="size" value="Small">Small <br>
-                <input type="radio" name="size" value="Medium"> Medium<br>
-                <input type="radio" name="size" value="Large"> Large<br>
+        <!-- <h1> Order here...</h1> -->
+        <div class="section3">
+            <div class="form">
+                <form action="">
+                    <div id="sizetable">
+                        <h3 class="tablehead">Select size:</h3>
+                        <div>
+                            <input type="radio" name="size" value="Small">Small <br>
+                            <input type="radio" name="size" value="Medium"> Medium<br>
+                            <input type="radio" name="size" value="Large"> Large<br>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="crusttable">
+                        <h3 class="tablehead">Select crust:</h3>
+                        <div>
+                            <input type="radio" name="crust" value="crispy"> crispy<br>
+                            <input type="radio" name="crust" value="stuffed"> stuffed<br>
+                            <input type="radio" name="crust" value="glutten-free"> glutten-free<br>
+                            <input type="radio" name="crust" value="flat-bread"> flat-bread<br>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div id="topping">
+                        <h3 class="tablehead">Select toppings:</h3>
+                        <div>
+                            <input type="checkbox" name="topping" value="Tomatoes"> Tomatoes<br>
+                            <input type="checkbox" name="topping" value="Onions"> Onions<br>
+                            <input type="checkbox" name="topping" value="Olives"> Black Olives<br>
+                            <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms<br>
+                            <input type="checkbox" name="topping" value="Pineapple"> Pineapple
+                        </div>
+                    </div>
+                    <br>
+                    <button id="calc" type="submit" onclick="order()">Submit order</button>
+                    <br>
+                </form>
+            </div>
+            <br>
+            <div class="table">
+                <table class="pizza">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="size"></td>
+                            <td id="sizeprice"></td>
+                        </tr>
+
+                        <tr>
+                            <td id="crust"></td>
+                            <td id="crustprice"></td>
+                        </tr>
+
+                        <tr>
+                            <td id="topping"></td>
+                            <td id="toppingprice"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>TOTAL PRICE:</strong></td>
+                            <td id="totalprice"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <br>
-
-        <div id="crusttable">
-            <h3 class="tablehead">Select crust:</h3>
-            <div>
-                <input type="radio" name="crust" value="crispy"> crispy<br>
-                <input type="radio" name="crust" value="stuffed"> stuffed<br>
-                <input type="radio" name="crust" value="glutten-free"> glutten-free<br>
-                <input type="radio" name="crust" value="flat-bread"> flat-bread<br>
-
-            </div>
-        </div>
-        <br>
-        <div id="topping">
-            <h3 class="tablehead">Select toppings:</h3>
-            <div>
-                <input type="checkbox" name="topping" value="Tomatoes"> Tomatoes<br>
-                <input type="checkbox" name="topping" value="Onions"> Onions<br>
-                <input type="checkbox" name="topping" value="Olives"> Black Olives<br>
-                <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms<br>
-                <input type="checkbox" name="topping" value="Pineapple"> Pineapple
-            </div>
-        </div>
-        <br>
-        <button id="calc" type="submit" onclick="order()">Submit order</button>
-        <br>
-        </form>
-        <table class="pizza" style="width: 50%;" border="1" cellpadding="5">
-            <tbody>
-                <tr>
-                    <td id="size"></td>
-                    <td id="sizeprice"></td>
-                </tr>
-
-                <tr>
-                    <td id="crust"></td>
-                    <td id="crustprice"></td>
-                </tr>
-
-                <tr>
-                    <td id="topping"></td>
-                    <td id="toppingprice"></td>
-                </tr>
-                <tr>
-                    <td><strong>TOTAL PRICE:</strong></td>
-                    <td id="totalprice"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
     </div>
     <div class="footer">
         <div class="uno">
@@ -128,4 +140,5 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
