@@ -18,6 +18,11 @@ This is Prep's week4 Independent project.It entails a pizza joint website.
 * Clone to your computer
 * Double click the index.html to go live/start your live server.
 
+## Screenshots
+<img src="assets/Screenshot from 2021-09-21 21-31-50.png">
+<img src="assets/Screenshot from 2021-09-21 21-31-58.png">
+<img src="assets/Screenshot from 2021-09-21 21-32-02.png">
+
 ## Technologies used
 * HTML
 * CSS
