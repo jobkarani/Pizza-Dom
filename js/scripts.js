@@ -53,8 +53,26 @@ $("#size").html(size+"KShs "+sizePrice+".00");
 $("#crust").html(crust+"Kshs "+crustPrice+".00");
 $("#toppings").html(toppingSelect+"Kshs "+toppingPrice+".00");
 $("#qty").html(quantity);
-$("#cost").html(totalPrice)
+$("#cost").html(totalPrice);
 $("#totalprice").html(" KShs " + totalPrice+".00");
+
+$(document).ready(function(){
+    $("#contact").submit(function(event){
+        event.preventDefault();
+
+        var personName = $("#fname").val();
+        var personLocation = $("#location").val();
+        
+        let deliveryCost = totalPrice + 200 ;
+        
+        alert("Hey "+ personName + " we'll deliver your order at "+personLocation + ".")
+        
+        $("#delTotal").text(deliveryCost);
+    })
+
+})
 };
+
+
 
 
