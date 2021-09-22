@@ -85,8 +85,11 @@
                             <input type="checkbox" name="topping" value="Pineapple"> Pineapple
                         </div>
                     </div>
+                    <div>
+                        <input type="text" id="quantity" class="form-control" placeholder="Quantity"  name="quantity" min="1" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
                     <br>
-                    <button id="calc" type="submit" onclick="order()">Submit order</button>
+                    <button id="calc" type="button" onclick="order()">Submit order</button>
                     <br>
                 </form>
             </div>
@@ -95,24 +98,25 @@
                 <table class="pizza">
                     <thead>
                         <tr>
-                            <th>Item</th>
-                            <th>Cost</th>
+                            <th>size</th>
+                            <th>crust</th>
+                            <th>topping</th>
+                            <th>Qty</th>
+                            <th>cost</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td id="size"></td>
-                            <td id="sizeprice"></td>
-                        </tr>
 
-                        <tr>
                             <td id="crust"></td>
-                            <td id="crustprice"></td>
-                        </tr>
 
-                        <tr>
-                            <td id="topping"></td>
-                            <td id="toppingprice"></td>
+                            <td id="toppings"></td>
+
+                            <td id="qty"></td>
+
+                            <td id="cost"></td>
+
                         </tr>
                         <tr>
                             <td><strong>TOTAL PRICE:</strong></td>

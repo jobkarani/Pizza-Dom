@@ -38,24 +38,22 @@ for (var i = 0; i<topping.length; i++) {
         toppingSelect.push(topping[i].value);
     };
  console.log("toppingSelect="+toppingSelect);
-if (toppingSelect.length > 4) {
-    toppingPrice = 2;
-    }; 
 
     console.log("toppingPrice="+toppingPrice);
 };
 toppingPrice = toppingSelect.length * 100; 
 console.log("toppingPrice="+toppingPrice);
 
-var totalPrice = (toppingPrice + crustPrice + sizePrice);
+let quantity = parseInt(document.getElementById("quantity").value);
+
+var totalPrice = ((toppingPrice + crustPrice + sizePrice)*quantity);
  console.log("totalPrice="+totalPrice);
 
-$("#size").html(size+" Pizza");
-$("#sizeprice").html("KShs "+sizePrice+".00");
-$("#crust").html(crust+" crust");
-$("#crustprice").html("Kshs "+crustPrice+".00");
-$("#topping").html(toppingSelect);
-$("#toppingprice").html("Kshs "+toppingPrice+".00");
+$("#size").html(size+"KShs "+sizePrice+".00");
+$("#crust").html(crust+"Kshs "+crustPrice+".00");
+$("#toppings").html(toppingSelect+"Kshs "+toppingPrice+".00");
+$("#qty").html(quantity);
+$("#cost").html(totalPrice)
 $("#totalprice").html(" KShs " + totalPrice+".00");
 };
 
