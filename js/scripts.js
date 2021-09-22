@@ -62,8 +62,8 @@ $(document).ready(function(){
 
         var personName = $("#fname").val();
         var personLocation = $("#location").val();
-        
-        let deliveryCost = totalPrice + 200 ;
+
+        let deliveryCost = totalPrice + parseInt(200) ;
         
         alert("Hey "+ personName + " we'll deliver your order at "+personLocation + ".")
         
